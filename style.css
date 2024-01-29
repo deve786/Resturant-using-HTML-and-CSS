@@ -498,7 +498,7 @@ html{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 80%;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
 }
 .res_head{
@@ -538,7 +538,12 @@ html{
     cursor: pointer;
 }
 
-
+@media (max-width:770px){
+    #person, #time, #date, #book_now{
+        margin-top: 8px;
+    }
+    
+}
 
 /* Footer */
 .footer{
@@ -609,7 +614,7 @@ th{
         margin-top: 25px;
     }
     .rest_abt p{
-        width: 65%;
+        
         text-align: left;
     }
     .wrkHor{
@@ -681,4 +686,50 @@ i{
     font-size: 20px;
 }
 
+.newsltr{
+   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+}
+.rest_abt{
+    display: flex;
+    flex-direction: column; 
+}
 
+@media (max-width:700px){
+    hr{
+        margin-top: 10px;
+    }
+    .rest_abt{
+        padding: 5px;
+    }
+    
+}
+
+@media (max-width:500px){
+    
+    .rest_abt,.newsltr,.addrs,.wrkHor{
+        
+       width: 80%;
+    }
+    
+}
+
+@media (min-width:500px){
+    
+    .rest_abt,.newsltr,.addrs,.wrkHor{
+       margin-top: 10px; 
+       width: 40%;
+    }
+    
+}
+@media (min-width:1200px){
+    
+    .rest_abt,.newsltr,.addrs,.wrkHor{
+       margin-top: 10px; 
+       width: 20%;
+    }
+    
+}
